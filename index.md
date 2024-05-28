@@ -72,9 +72,11 @@ To retrieve all departments related to a particular hospital, make a POST reques
 
 ### Parameters:
 
-- **HospitalId**: Required
-  - Type: Integer
-  - Description: Unique identifier for the hospital.
+| Parameter  | Details   |
+|------------|-----------|
+| HospitalId | Required  |
+|            | Value: Integer |
+
 
 You can obtain the hospital ID by using the hospital API.
 
@@ -89,13 +91,13 @@ To get all the wards related to a particular department and hospital, use the fo
 
 ### Parameters:
 
-1. **HospitalId**: Required
-   - Data Type: Integer
-   - Description: Unique identifier for the hospital.
+| Parameter      | Details           |
+|----------------|-------------------|
+| HospitalId     | Required          |
+|                | Data Type: Integer|
+| DepartmentId   | Required          |
+|                | Data Type: Integer|
 
-2. **DepartmentId**: Required
-   - Data Type: Integer
-   - Description: Unique identifier for the department.
 
 You can obtain the hospital ID and department ID by using the relevant APIs.
 
@@ -110,9 +112,10 @@ To retrieve all designations related to a particular hospital, make a POST reque
 
 ### Parameters:
 
-- **HospitalId**: Required
-  - Data Type: Integer
-  - Description: Unique identifier for the hospital.
+| Parameter  | Details                     |
+|------------|-----------------------------|
+| HospitalId | Required                    |
+|            | Data Type: Integer          |
 
 
 
