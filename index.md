@@ -14,7 +14,7 @@
 
 **Endpoint**: `POST /api/Account/checkuser`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/checkuser`
+**URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Account/checkuser`
 
 **Parameters**:
 
@@ -37,7 +37,7 @@
 To retrieve all departments related to a particular hospital, make a POST request to the following API endpoint:
 
 **Endpoint**: `POST /api/Admin/GetAllDepartments`
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/GetAllDepartments`
+**URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Admin/GetAllDepartments`
 
 ### Parameters:
 
@@ -54,17 +54,16 @@ You can obtain the hospital ID by using the hospital API.
 
 To get all the wards related to a particular department and hospital, use the following API endpoint:
 
-**API Method**: `POST`
-**URL**: `baseurl/api/Admin/GetWardsByDepartment`
+**Endpoint**: `POST /api/Admin/GetWardsByDepartment`
+**URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Admin/GetWardsByDepartment`
+
 
 ### Parameters:
 
-| Parameter      | Details           |
-|----------------|-------------------|
-| HospitalId     | Required          |
-|                | Data Type: Integer|
-| DepartmentId   | Required          |
-|                | Data Type: Integer|
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| HospitalId   | Integer |Hospital Id           |
+| DepartmentId   | Integer |Department Id           |
 
 
 You can obtain the hospital ID and department ID by using the relevant APIs.
@@ -75,15 +74,14 @@ You can obtain the hospital ID and department ID by using the relevant APIs.
 
 To retrieve all designations related to a particular hospital, make a POST request to the following API endpoint:
 
-**API Method**: `POST`
-**URL**: `baseurl/api/Admin/GetDesignationByHospital`
+**Endpoint**: `POST /api/Admin/GetDesignationByHospital`
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/GetDesignationByHospital`
 
 ### Parameters:
 
-| Parameter  | Details                     |
-|------------|-----------------------------|
-| HospitalId | Required                    |
-|            | Data Type: Integer          |
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| HospitalId   | Integer |Hospital Id           |
 
 
 
@@ -93,17 +91,19 @@ To retrieve all designations related to a particular hospital, make a POST reque
 
 When a nurse joins your organization and their details are captured in your HR system, you can follow this process to create the nurse automatically in Triton.
 
-- **API Url**: `POST api/Admin/CreateUser`
+**Endpoint**: `POST /api/Admin/CreateUser`
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/CreateUser`
+
 
 **Parameters**:
 
-| Parameter | Details                                   |
-|-----------|-------------------------------------------|
-| UserName  | Required, Data Type: String               |
-| Password  | Required, Data Type: Password             |
-| RoleId    | Required, Data Type: Integer (4 for general user/nurse) |
-| HospitalId| Required, Data Type: Integer              |
-| EmailId   | Required, Data Type: Email Id             |
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| UserName   | String  |  Name of User   (Required)        |
+| Password   | String  |  Password  (Required)         |
+| RoleId     | Integer | //4 Please use role id 4 for nurse role           |
+| HospitalId | Integer | Hospital Id           |
+| EmailId    | String  | Email Id          |
 
 
 ---
