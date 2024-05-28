@@ -45,7 +45,7 @@
 
 ---
 
-# User Management
+# Hotel Management
 
 ## Check Users API
 
