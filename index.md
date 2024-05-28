@@ -140,6 +140,29 @@ When a nurse joins your organization and their details are captured in your HR s
 
 ### Sample:
 
+```json
+{
+  "CreatedBy": 1,
+  "Password": "sample string 1",
+  "qualification": "sample string 3",
+  "Image": "sample string 5",
+  "UserName": "sample string 6",
+  "Name": "sample string 7",
+  "LastName": "sample string 8",
+  "Email": "sample string 9",
+  "Address": "sample string 10",
+  "EmployeeNumber": "sample string 11",
+  "Country": "sample string 12",
+  "Mobile": "sample string 13",
+  "RoleId": 4,
+  "DepartmentId": 1,
+  "HospitalId": 1,
+  "DesignationId": 1,
+  "ReportTo": 1,
+  "WardId": 1
+}
+
+
 ## Off-duties / Duty Roster
 
 To manage off-duties or duty roster, you need to call the following API with the requested parameters:
