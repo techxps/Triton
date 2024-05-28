@@ -102,29 +102,6 @@ When a nurse joins your organization and their details are captured in your HR s
 
 ### Sample:
 
-```json
-{
-  "CreatedBy": 1,
-  "Password": "sample string 1",
-  "qualification": "sample string 3",
-  "Image": "sample string 5",
-  "UserName": "sample string 6",
-  "Name": "sample string 7",
-  "LastName": "sample string 8",
-  "Email": "sample string 9",
-  "Address": "sample string 10",
-  "EmployeeNumber": "sample string 11",
-  "Country": "sample string 12",
-  "Mobile": "sample string 13",
-  "RoleId": 4,
-  "DepartmentId": 1,
-  "HospitalId": 1,
-  "DesignationId": 1,
-  "ReportTo": 1,
-  "WardId": 1
-}
-
-
 ### Update Plan
 
 **Endpoint**: `PUT /api/Plan/UpdatePlan`
@@ -163,28 +140,6 @@ When a nurse joins your organization and their details are captured in your HR s
 
 ### Sample:
 
-```json
-{
-  "CreatedBy": 1,
-  "Password": "sample string 1",
-  "qualification": "sample string 3",
-  "Image": "sample string 5",
-  "UserName": "sample string 6",
-  "Name": "sample string 7",
-  "LastName": "sample string 8",
-  "Email": "sample string 9",
-  "Address": "sample string 10",
-  "EmployeeNumber": "sample string 11",
-  "Country": "sample string 12",
-  "Mobile": "sample string 13",
-  "RoleId": 4,
-  "DepartmentId": 1,
-  "HospitalId": 1,
-  "DesignationId": 1,
-  "ReportTo": 1,
-  "WardId": 1
-}
-
 ## Off-duties / Duty Roster
 
 To manage off-duties or duty roster, you need to call the following API with the requested parameters:
@@ -204,22 +159,6 @@ To get the `ShiftMasterId`, use the following enum class:
 - For "Day" shift, use 1.
 
 ### Sample Request:
-
-```json
-[
-  {
-    "$id": "1",
-    "UserId": 1,
-    "DepartmentId": 2,
-    "ShiftMasterId": 3,
-    "ShiftDate": "2024-05-26T09:55:48.0096806+00:00",
-    "CreatedBy": 4,
-    "ShiftId": "sample string 5"
-  },
-  {
-    "$ref": "1"
-  }
-]
 
 ## Clock-in
 
