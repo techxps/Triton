@@ -98,20 +98,32 @@ When a nurse joins your organization and their details are captured in your HR s
 
 ---
 
-### Get Plan
+## Request Formats
 
-**Endpoint**: `GET /api/Plan/GetPlan`
+### Sample:
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/GetPlan`
+```json
+{
+  "CreatedBy": 1,
+  "Password": "sample string 1",
+  "qualification": "sample string 3",
+  "Image": "sample string 5",
+  "UserName": "sample string 6",
+  "Name": "sample string 7",
+  "LastName": "sample string 8",
+  "Email": "sample string 9",
+  "Address": "sample string 10",
+  "EmployeeNumber": "sample string 11",
+  "Country": "sample string 12",
+  "Mobile": "sample string 13",
+  "RoleId": 4,
+  "DepartmentId": 1,
+  "HospitalId": 1,
+  "DesignationId": 1,
+  "ReportTo": 1,
+  "WardId": 1
+}
 
-**Parameters**:
-
-| Parameter         | Type   | Description                 |
-|-------------------|--------|-----------------------------|
-| PlanningHistoryId | int    | Mandatory                    |
-| UserId            | int    | UniqueId of Particular User  |
-
----
 
 ### Update Plan
 
@@ -148,35 +160,88 @@ When a nurse joins your organization and their details are captured in your HR s
 
 ---
 
-### Get Plans
+## Request Formats
 
-**Endpoint**: `GET /api/Plan/GetPlans`
+### Sample:
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/GetPlans`
+```json
+{
+  "CreatedBy": 1,
+  "Password": "sample string 1",
+  "qualification": "sample string 3",
+  "Image": "sample string 5",
+  "UserName": "sample string 6",
+  "Name": "sample string 7",
+  "LastName": "sample string 8",
+  "Email": "sample string 9",
+  "Address": "sample string 10",
+  "EmployeeNumber": "sample string 11",
+  "Country": "sample string 12",
+  "Mobile": "sample string 13",
+  "RoleId": 4,
+  "DepartmentId": 1,
+  "HospitalId": 1,
+  "DesignationId": 1,
+  "ReportTo": 1,
+  "WardId": 1
+}
 
-**Parameters**:
 
-| Parameter    | Type   | Description                         |
-|--------------|--------|-------------------------------------|
-| DepartmentId | int    | Mandatory                           |
-| WardId       | int    | UniqueId of Particular Ward (Required) |
-| HospitalId   | int    | UniqueId of Particular Hospital (Required) |
+## Off-duties / Duty Roster
 
----
+To manage off-duties or duty roster, you need to call the following API with the requested parameters:
 
-### Get Staff List
+**API Endpoint**: `POST api/Roaster/CreateNurseShift`
 
-**Endpoint**: `GET /api/Plan/GetStaffList`
+### Parameters:
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/GetStaffList`
+1. **EmployeeNumber**: Required
+2. **DepartmentId**: Required (Data Type: Integer)
+3. **ShiftMasterId**: Required (Data Type: Integer)
+4. **ShiftDate**: Required (DateTime Format: mm/dd/yyyy)
+5. **CreatedBy**: Required (Value: 1 for admin HR system)
 
-**Parameters**:
+To get the `ShiftMasterId`, use the following enum class:
 
-| Parameter    | Type   | Description                         |
-|--------------|--------|-------------------------------------|
-| DepartmentId | int    | Mandatory                           |
-| WardId       | int    | UniqueId of Particular Ward (Required) |
-| PlanForDate  | DateTime| ShiftPlan (Required)                |
+- For "Day" shift, use 1.
+
+### Sample Request:
+
+```json
+[
+  {
+    "$id": "1",
+    "UserId": 1,
+    "DepartmentId": 2,
+    "ShiftMasterId": 3,
+    "ShiftDate": "2024-05-26T09:55:48.0096806+00:00",
+    "CreatedBy": 4,
+    "ShiftId": "sample string 5"
+  },
+  {
+    "$ref": "1"
+  }
+]
+
+## Clock-in
+
+When a staff member physically clocks in on-site, you can push that information to the Surveillance environment on Triton using the Clock-in API. This allows you to populate the existing column for clock-in data and enables reporting from Triton as a single source. Reporting can still be combined without integration by including two reporting sources – one for planning (Triton) and one for actuals (your clock-in system).
+
+### API Endpoint
+
+**API Url**: `POST api/Roaster/ClockIn`
+
+### Parameters
+
+1. **EmployeeNumber**: Required
+2. **DepartmentId**: Required (Data Type: Integer)
+3. **ClockInDate**: Required (DateTime Format: dd/mm/yyyy)
+
+Request the following information regarding an employee's punch-in activity in your offline system:
+- Employee Number: [Insert Employee Number]
+- Department: [Insert Department]
+- Date of Punch-In: [Insert Date]
+
 
 ---
 
