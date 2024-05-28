@@ -3,7 +3,6 @@
 1. [API Authentication](#api-authentication)
 2. [Hospital Management](#user-management)
    - [Check Users API](#check-users-api)
-   - [Forgot Password](#forgot-password)
    - [Get All Departments](#get-all-departments)  <!-- Updated -->
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
