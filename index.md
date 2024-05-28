@@ -12,34 +12,33 @@
 
 ### Authorization Token
 
-**Endpoint**: `POST /api/Account/AuthorizationToken`
+**Endpoint**: `POST /api/Account/checkuser`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/AuthorizationToken`
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/checkuser`
 
 **Parameters**:
 
 | Parameter  | Type   | Description                |
 |------------|--------|----------------------------|
-| UserName   | string | EmailId/Username (Required)|
-| Password   | string | Password (Required)        |
-| HospitalId | int    | Unique Id (Required)       |
+| UserName   | string | EmailId/Username           |
+| Password   | string | Password                   |
+| HospitalId | int    | Unique Id                  |
 
 ---
 
-## Check Users API
+## Master API
 ## Get All Departments
 
 To retrieve all departments related to a particular hospital, make a POST request to the following API endpoint:
 
-**API Method**: `POST`
-**URL**: `baseurl/api/Admin/GetAllDepartments`
+**Endpoint**: `POST /api/Admin/GetAllDepartments`
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/GetAllDepartments`
 
 ### Parameters:
 
-| Parameter  | Details   |
-|------------|-----------|
-| HospitalId | Required  |
-|            | Value: Integer |
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| HospitalId   | Integer |Hospital Id           |
 
 
 You can obtain the hospital ID by using the hospital API.
