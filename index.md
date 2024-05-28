@@ -1,51 +1,4 @@
-## Triton
----
-## Table of Contents
-
-1. [API Authentication](#api-authentication)
-2. [User Management](#user-management)
-   - [Check Users API](#check-users-api)
-   - [Forgot Password](#forgot-password)
-3. [Plan Management](#plan-management)
-   - [Create Plan](#create-plan)
-   - [Get Plan](#get-plan)
-   - [Update Plan](#update-plan)
-   - [Get Plans](#get-plans)
-   - [Get Staff List](#get-staff-list)
-   - [Create Approved Plan](#create-approved-plan)
-4. [Shift Management](#shift-management)
-   - [Create Shift](#create-shift)
-   - [Get Shift](#get-shift)
-   - [Update Shift](#update-shift)
-5. [Surveillance](#surveillance)
-6. [Bed Management](#bed-management)
-   - [Save Bed](#save-bed)
-   - [Update Bed](#update-bed)
-   - [Get All Beds](#get-all-beds)
-   - [Get Bed By Id](#get-bed-by-id)
-   - [Get Beds By Ward](#get-beds-by-ward)
-
----
-
-## API Authentication
-
-### Authorization Token
-
-**Endpoint**: `POST /api/Account/AuthorizationToken`
-
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/AuthorizationToken`
-
-**Parameters**:
-
-| Parameter  | Type   | Description                |
-|------------|--------|----------------------------|
-| UserName   | string | EmailId/Username (Required)|
-| Password   | string | Password (Required)        |
-| HospitalId | int    | Unique Id (Required)       |
-
----
-
-# Hotel Management
+<!-- # Hotel Management
 
 ## Check Users API
 
@@ -102,6 +55,29 @@ When a nurse joins your organization and their details are captured in your HR s
 
 ### Sample:
 
+```json
+{
+  "CreatedBy": 1,
+  "Password": "sample string 1",
+  "qualification": "sample string 3",
+  "Image": "sample string 5",
+  "UserName": "sample string 6",
+  "Name": "sample string 7",
+  "LastName": "sample string 8",
+  "Email": "sample string 9",
+  "Address": "sample string 10",
+  "EmployeeNumber": "sample string 11",
+  "Country": "sample string 12",
+  "Mobile": "sample string 13",
+  "RoleId": 4,
+  "DepartmentId": 1,
+  "HospitalId": 1,
+  "DesignationId": 1,
+  "ReportTo": 1,
+  "WardId": 1
+}
+
+
 ### Update Plan
 
 **Endpoint**: `PUT /api/Plan/UpdatePlan`
@@ -135,6 +111,7 @@ When a nurse joins your organization and their details are captured in your HR s
 | RoundDown              | decimal | Decimal Number                     |
 | MinimumSuggestedStaff  | int     | Integer                            |
 
+---
 
 ## Request Formats
 
@@ -161,8 +138,7 @@ When a nurse joins your organization and their details are captured in your HR s
   "ReportTo": 1,
   "WardId": 1
 }
-```
----
+
 
 ## Off-duties / Duty Roster
 
@@ -184,6 +160,22 @@ To get the `ShiftMasterId`, use the following enum class:
 
 ### Sample Request:
 
+```json
+[
+  {
+    "$id": "1",
+    "UserId": 1,
+    "DepartmentId": 2,
+    "ShiftMasterId": 3,
+    "ShiftDate": "2024-05-26T09:55:48.0096806+00:00",
+    "CreatedBy": 4,
+    "ShiftId": "sample string 5"
+  },
+  {
+    "$ref": "1"
+  }
+]
+
 ## Clock-in
 
 When a staff member physically clocks in on-site, you can push that information to the Surveillance environment on Triton using the Clock-in API. This allows you to populate the existing column for clock-in data and enables reporting from Triton as a single source. Reporting can still be combined without integration by including two reporting sources – one for planning (Triton) and one for actuals (your clock-in system).
@@ -202,7 +194,201 @@ Request the following information regarding an employee's punch-in activity in y
 - Employee Number: [Insert Employee Number]
 - Department: [Insert Department]
 - Date of Punch-In: [Insert Date]
+ -->
 
+
+## Triton
+---
+## Table of Contents
+
+1. [API Authentication](#api-authentication)
+2. [User Management](#user-management)
+   - [Check Users API](#check-users-api)
+   - [Forgot Password](#forgot-password)
+3. [Plan Management](#plan-management)
+   - [Create Plan](#create-plan)
+   - [Get Plan](#get-plan)
+   - [Update Plan](#update-plan)
+   - [Get Plans](#get-plans)
+   - [Get Staff List](#get-staff-list)
+   - [Create Approved Plan](#create-approved-plan)
+4. [Shift Management](#shift-management)
+   - [Create Shift](#create-shift)
+   - [Get Shift](#get-shift)
+   - [Update Shift](#update-shift)
+5. [Surveillance](#surveillance)
+6. [Bed Management](#bed-management)
+   - [Save Bed](#save-bed)
+   - [Update Bed](#update-bed)
+   - [Get All Beds](#get-all-beds)
+   - [Get Bed By Id](#get-bed-by-id)
+   - [Get Beds By Ward](#get-beds-by-ward)
+
+---
+
+## API Authentication
+
+### Authorization Token
+
+**Endpoint**: `POST /api/Account/AuthorizationToken`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/AuthorizationToken`
+
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| UserName   | string | EmailId/Username (Required)|
+| Password   | string | Password (Required)        |
+| HospitalId | int    | Unique Id (Required)       |
+
+---
+
+## User Management
+
+### Check Users API
+
+**Endpoint**: `POST /api/Account/admincheckuser`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser`
+
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| UserName   | string | Email Id/Username (Required)|
+| Password   | string | Password (Required)        |
+| HospitalId | int    | Unique Id (Required)       |
+
+---
+
+### Forgot Password
+
+**Endpoint**: `POST /api/Account/ForgotPassword`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword`
+
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| Email      | string | Email Id/Username (Required)|
+
+---
+
+## Plan Management
+
+### Create Plan
+
+**Endpoint**: `POST /api/Plan/CreatePlan`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/CreatePlan`
+
+**Parameters**:
+
+| Parameter              | Type    | Description                        |
+|------------------------|---------|------------------------------------|
+| DepartmentId           | int     | Unique Id                          |
+| WardId                 | int     | Unique Id                          |
+| TotalBeds              | int     | Number                             |
+| StandardAcquity        | int     | Number                             |
+| RegisteredNurse        | int     | Number                             |
+| EnrolledNurse          | int     | Number                             |
+| EnrolledNurseAuxillary | int     | Number                             |
+| DependencyCategory1    | int     | Number                             |
+| DependencyCategory2    | int     | Number                             |
+| DependencyCategory3    | int     | Number                             |
+| DependencyCategory4    | int     | Number                             |
+| DayShift               | int     | Number                             |
+| NightShift             | int     | Number                             |
+| TargetCostPerDay       | string  | String                             |
+| PlanForDate            | DateTime| Specify date for the particular plan|
+| IsRoundUpDown          | bool    | Optional                           |
+| RoundUp                | decimal | Decimal Number                     |
+| RoundDown              | decimal | Decimal Number                     |
+| MinimumSuggestedStaff  | int     | Integer                            |
+
+---
+
+### Get Plan
+
+**Endpoint**: `GET /api/Plan/GetPlan`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/GetPlan`
+
+**Parameters**:
+
+| Parameter         | Type   | Description                 |
+|-------------------|--------|-----------------------------|
+| PlanningHistoryId | int    | Mandatory                    |
+| UserId            | int    | UniqueId of Particular User  |
+
+---
+
+### Update Plan
+
+**Endpoint**: `PUT /api/Plan/UpdatePlan`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/UpdatePlan`
+
+**Parameters**:
+
+| Parameter              | Type    | Description                        |
+|------------------------|---------|------------------------------------|
+| PlanningId             | int     | Required                           |
+| PlanningHistoryId      | int     | Required                           |
+| ModifiedBy             | int     | UserId of modified User (Required) |
+| DepartmentId           | int     | Unique Id                          |
+| WardId                 | int     | Unique Id                          |
+| TotalBeds              | int     | Number                             |
+| StandardAcquity        | int     | Number                             |
+| RegisteredNurse        | int     | Number                             |
+| EnrolledNurse          | int     | Number                             |
+| EnrolledNurseAuxillary | int     | Number                             |
+| DependencyCategory1    | int     | Number                             |
+| DependencyCategory2    | int     | Number                             |
+| DependencyCategory3    | int     | Number                             |
+| DependencyCategory4    | int     | Number                             |
+| DayShift               | int     | Number                             |
+| NightShift             | int     | Number                             |
+| TargetCostPerDay       | string  | String                             |
+| PlanForDate            | DateTime| Specify date for the particular plan|
+| IsRoundUpDown          | bool    | Optional                           |
+| RoundUp                | decimal | Decimal Number                     |
+| RoundDown              | decimal | Decimal Number                     |
+| MinimumSuggestedStaff  | int     | Integer                            |
+
+---
+
+### Get Plans
+
+**Endpoint**: `GET /api/Plan/GetPlans`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/GetPlans`
+
+**Parameters**:
+
+| Parameter    | Type   | Description                         |
+|--------------|--------|-------------------------------------|
+| DepartmentId | int    | Mandatory                           |
+| WardId       | int    | UniqueId of Particular Ward (Required) |
+| HospitalId   | int    | UniqueId of Particular Hospital (Required) |
+
+---
+
+### Get Staff List
+
+**Endpoint**: `GET /api/Plan/GetStaffList`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/GetStaffList`
+
+**Parameters**:
+
+| Parameter    | Type   | Description                         |
+|--------------|--------|-------------------------------------|
+| DepartmentId | int    | Mandatory                           |
+| WardId       | int    | UniqueId of Particular Ward (Required) |
+| PlanForDate  | DateTime| ShiftPlan (Required)                |
 
 ---
 
