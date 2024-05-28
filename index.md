@@ -190,7 +190,8 @@ When a nurse joins your organization and their details are captured in your HR s
   "WardId": 1
 }
 
-
+```
+---
 ## Off-duties / Duty Roster
 
 To manage off-duties or duty roster, you need to call the following API with the requested parameters:
@@ -226,7 +227,8 @@ To get the `ShiftMasterId`, use the following enum class:
     "$ref": "1"
   }
 ]
-
+```
+---
 ## Clock-in
 
 When a staff member physically clocks in on-site, you can push that information to the Surveillance environment on Triton using the Clock-in API. This allows you to populate the existing column for clock-in data and enables reporting from Triton as a single source. Reporting can still be combined without integration by including two reporting sources – one for planning (Triton) and one for actuals (your clock-in system).
