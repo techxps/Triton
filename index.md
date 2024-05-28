@@ -2,30 +2,13 @@
 
 1. [API Authentication](#api-authentication)
 2. [Hospital Management](#user-management)
-   - [Check Users API](#check-users-api)
    - [Get All Departments](#get-all-departments)  <!-- Updated -->
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
-3. [Plan Management](#plan-management)
-   - [Create Plan](#create-plan)
-   - [Get Plan](#get-plan)
-   - [Update Plan](#update-plan)
-   - [Get Plans](#get-plans)
-   - [Get Staff List](#get-staff-list)
-   - [Create Approved Plan](#create-approved-plan)
-4. [Shift Management](#shift-management)
-   - [Create Shift](#create-shift)
-   - [Get Shift](#get-shift)
-   - [Update Shift](#update-shift)
+3. [Shift Management](#shift-management)
    - [Off-duties / Duty Roster](#off-duties--duty-roster)  <!-- Updated -->
    - [Clock-in](#clock-in)  <!-- Updated -->
-5. [Surveillance](#surveillance)
-6. [Bed Management](#bed-management)
-   - [Save Bed](#save-bed)
-   - [Update Bed](#update-bed)
-   - [Get All Beds](#get-all-beds)
-   - [Get Bed By Id](#get-bed-by-id)
-   - [Get Beds By Ward](#get-beds-by-ward)
+
 
 
 ## Check Users API
