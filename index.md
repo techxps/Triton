@@ -77,37 +77,24 @@
 
 
 
-## Plan Management
+### JML Leaving Process
 
-### Create Plan
+#### Joining
 
-**Endpoint**: `POST /api/Plan/CreatePlan`
+When a nurse joins your organization and their details are captured in your HR system, you can follow this process to create the nurse automatically in Triton.
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Plan/CreatePlan`
+- **API Url**: `POST api/Admin/CreateUser`
 
 **Parameters**:
 
-| Parameter              | Type    | Description                        |
-|------------------------|---------|------------------------------------|
-| DepartmentId           | int     | Unique Id                          |
-| WardId                 | int     | Unique Id                          |
-| TotalBeds              | int     | Number                             |
-| StandardAcquity        | int     | Number                             |
-| RegisteredNurse        | int     | Number                             |
-| EnrolledNurse          | int     | Number                             |
-| EnrolledNurseAuxillary | int     | Number                             |
-| DependencyCategory1    | int     | Number                             |
-| DependencyCategory2    | int     | Number                             |
-| DependencyCategory3    | int     | Number                             |
-| DependencyCategory4    | int     | Number                             |
-| DayShift               | int     | Number                             |
-| NightShift             | int     | Number                             |
-| TargetCostPerDay       | string  | String                             |
-| PlanForDate            | DateTime| Specify date for the particular plan|
-| IsRoundUpDown          | bool    | Optional                           |
-| RoundUp                | decimal | Decimal Number                     |
-| RoundDown              | decimal | Decimal Number                     |
-| MinimumSuggestedStaff  | int     | Integer                            |
+| Parameter | Details                                   |
+|-----------|-------------------------------------------|
+| UserName  | Required, Data Type: String               |
+| Password  | Required, Data Type: Password             |
+| RoleId    | Required, Data Type: Integer (4 for general user/nurse) |
+| HospitalId| Required, Data Type: Integer              |
+| EmailId   | Required, Data Type: Email Id             |
+
 
 ---
 
