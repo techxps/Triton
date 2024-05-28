@@ -158,7 +158,6 @@ When a nurse joins your organization and their details are captured in your HR s
 | RoundDown              | decimal | Decimal Number                     |
 | MinimumSuggestedStaff  | int     | Integer                            |
 
----
 
 ## Request Formats
 
