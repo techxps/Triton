@@ -1,32 +1,56 @@
-<!-- # Hotel Management
+<!-- # Hospital Management
 
 ## Check Users API
+## Get All Departments
 
-**Endpoint**: `POST /api/Account/admincheckuser`  
-**URL**: [https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser](https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser)
+To retrieve all departments related to a particular hospital, make a POST request to the following API endpoint:
 
-**Parameters**:
+**API Method**: `POST`
+**URL**: `baseurl/api/Admin/GetAllDepartments`
 
-- **UserName**: string (Required)  
-  Email Id/Username
-  
-- **Password**: string (Required)  
-  Password
-  
-- **HospitalId**: int (Required)  
-  Unique Id
+### Parameters:
+
+- **HospitalId**: Required
+  - Type: Integer
+  - Description: Unique identifier for the hospital.
+
+You can obtain the hospital ID by using the hospital API.
 
 ---
 
-## Forgot Password
+## Get Wards By Department
 
-**Endpoint**: `POST /api/Account/ForgotPassword`  
-**URL**: [https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword](https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword)
+To get all the wards related to a particular department and hospital, use the following API endpoint:
 
-**Parameters**:
+**API Method**: `POST`
+**URL**: `baseurl/api/Admin/GetWardsByDepartment`
 
-- **Email**: string (Required)  
-  Email Id/Username
+### Parameters:
+
+1. **HospitalId**: Required
+   - Data Type: Integer
+   - Description: Unique identifier for the hospital.
+
+2. **DepartmentId**: Required
+   - Data Type: Integer
+   - Description: Unique identifier for the department.
+
+You can obtain the hospital ID and department ID by using the relevant APIs.
+
+---
+
+## Get Designations By Hospital
+
+To retrieve all designations related to a particular hospital, make a POST request to the following API endpoint:
+
+**API Method**: `POST`
+**URL**: `baseurl/api/Admin/GetDesignationByHospital`
+
+### Parameters:
+
+- **HospitalId**: Required
+  - Data Type: Integer
+  - Description: Unique identifier for the hospital.
 
 
 
