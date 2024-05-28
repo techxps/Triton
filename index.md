@@ -185,7 +185,6 @@ When a nurse joins your organization and their details are captured in your HR s
   "WardId": 1
 }
 
-
 ## Off-duties / Duty Roster
 
 To manage off-duties or duty roster, you need to call the following API with the requested parameters:
