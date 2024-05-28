@@ -25,7 +25,8 @@
 | HospitalId | int    | Unique Id                  |
 
 
-![image](https://github.com/techxps/Triton/assets/169183598/eacf620e-b0a2-4963-93cb-8078737984f0)
+![image](https://github.com/techxps/Triton/assets/169183598/5786c8af-16aa-4063-8432-9c334a0d32ba)
+
 
 
 
