@@ -1,11 +1,10 @@
 ## Table of Contents
 
-1. [API Authentication](#api-authentication)
-2. [Hospital Management](#user-management)
+1. [Hospital Management](#user-management)
    - [Get All Departments](#get-all-departments)  <!-- Updated -->
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
-3. [Shift Management](#shift-management)
+2. [Shift Management](#shift-management)
    - [Off-duties / Duty Roster](#off-duties--duty-roster)  <!-- Updated -->
    - [Clock-in](#clock-in)  <!-- Updated -->
 
