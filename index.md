@@ -127,7 +127,6 @@ When a nurse joins your organization and their details are captured in your HR s
   "ReportTo": 1,
   "WardId": 1
 }
-
 ```
 ---
 ### Update Plan
