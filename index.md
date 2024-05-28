@@ -45,33 +45,36 @@
 
 ---
 
-## Hotel Management
+# User Management
 
-### Check Users API
+## Check Users API
 
-- **Endpoint**: `POST /api/Account/admincheckuser`
-- **URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser`
+**Endpoint**: `POST /api/Account/admincheckuser`  
+**URL**: [https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser](https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser)
 
 **Parameters**:
 
-| Parameter  | Type   | Description                |
-|------------|--------|----------------------------|
-| UserName   | string | Email Id/Username (Required)|
-| Password   | string | Password (Required)        |
-| HospitalId | int    | Unique Id (Required)       |
+- **UserName**: string (Required)  
+  Email Id/Username
+  
+- **Password**: string (Required)  
+  Password
+  
+- **HospitalId**: int (Required)  
+  Unique Id
 
 ---
 
-### Forgot Password
+## Forgot Password
 
-- **Endpoint**: `POST /api/Account/ForgotPassword`
-- **URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword`
+**Endpoint**: `POST /api/Account/ForgotPassword`  
+**URL**: [https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword](https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword)
 
 **Parameters**:
 
-| Parameter  | Type   | Description                |
-|------------|--------|----------------------------|
-| Email      | string | Email Id/Username (Required)|
+- **Email**: string (Required)  
+  Email Id/Username
+
 
 
 ## Plan Management
