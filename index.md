@@ -55,6 +55,7 @@ You can obtain the hospital ID by using the hospital API.
 To get all the wards related to a particular department and hospital, use the following API endpoint:
 
 **Endpoint**: `POST /api/Admin/GetWardsByDepartment`
+
 **URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Admin/GetWardsByDepartment`
 
 
@@ -75,6 +76,7 @@ You can obtain the hospital ID and department ID by using the relevant APIs.
 To retrieve all designations related to a particular hospital, make a POST request to the following API endpoint:
 
 **Endpoint**: `POST /api/Admin/GetDesignationByHospital`
+
 **URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/GetDesignationByHospital`
 
 ### Parameters:
@@ -92,6 +94,7 @@ To retrieve all designations related to a particular hospital, make a POST reque
 When a nurse joins your organization and their details are captured in your HR system, you can follow this process to create the nurse automatically in Triton.
 
 **Endpoint**: `POST /api/Admin/CreateUser`
+
 **URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/CreateUser`
 
 
