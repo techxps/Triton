@@ -24,6 +24,10 @@
 | Password   | string | Password                   |
 | HospitalId | int    | Unique Id                  |
 
+
+![image](https://github.com/techxps/Triton/assets/169183598/43f9a865-eb0e-4684-9dfc-ba00418367a8)
+
+
 ---
 
 ## Master API
