@@ -1,4 +1,31 @@
-<!-- # Hospital Management
+## Triton
+---
+## Table of Contents
+
+1. [API Authentication](#api-authentication)
+2. [Hospital Management](#user-management)
+   - [Check Users API](#check-users-api)
+   - [Forgot Password](#forgot-password)
+3. [Plan Management](#plan-management)
+   - [Create Plan](#create-plan)
+   - [Get Plan](#get-plan)
+   - [Update Plan](#update-plan)
+   - [Get Plans](#get-plans)
+   - [Get Staff List](#get-staff-list)
+   - [Create Approved Plan](#create-approved-plan)
+4. [Shift Management](#shift-management)
+   - [Create Shift](#create-shift)
+   - [Get Shift](#get-shift)
+   - [Update Shift](#update-shift)
+5. [Surveillance](#surveillance)
+6. [Bed Management](#bed-management)
+   - [Save Bed](#save-bed)
+   - [Update Bed](#update-bed)
+   - [Get All Beds](#get-all-beds)
+   - [Get Bed By Id](#get-bed-by-id)
+   - [Get Beds By Ward](#get-beds-by-ward)
+
+---
 
 ## Check Users API
 ## Get All Departments
