@@ -1,9 +1,6 @@
 ## Table of Contents
 1. [API Authentication](#api-authentication)
-2. [User Management](#user-management)
-   - [Check Users API](#check-users-api)
-   - [Forgot Password](#forgot-password)
-3. [Hospital Management](#user-management)
+2. [Hospital Management](#user-management)
    - [Get All Departments](#get-all-departments)  <!-- Updated -->
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
@@ -28,39 +25,6 @@
 | HospitalId | int    | Unique Id (Required)       |
 
 ---
-
-## User Management
-
-### Check Users API
-
-**Endpoint**: `POST /api/Account/admincheckuser`
-
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/admincheckuser`
-
-**Parameters**:
-
-| Parameter  | Type   | Description                |
-|------------|--------|----------------------------|
-| UserName   | string | Email Id/Username (Required)|
-| Password   | string | Password (Required)        |
-| HospitalId | int    | Unique Id (Required)       |
-
----
-
-### Forgot Password
-
-**Endpoint**: `POST /api/Account/ForgotPassword`
-
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Account/ForgotPassword`
-
-**Parameters**:
-
-| Parameter  | Type   | Description                |
-|------------|--------|----------------------------|
-| Email      | string | Email Id/Username (Required)|
-
----
-
 
 ## Check Users API
 ## Get All Departments
