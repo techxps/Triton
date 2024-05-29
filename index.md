@@ -161,15 +161,23 @@ When a nurse joins your organization and their details are captured in your HR s
 
 To manage off-duties or duty roster, you need to call the following API with the requested parameters:
 
-**API Endpoint**: `POST api/Roaster/CreateNurseShift`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/CreateUserShiftByEmployeeNumber`
+
+**API Endpoint**: `POST api/Roaster/CreateUserShiftByEmployeeNumber`
 
 ### Parameters:
 
-1. **EmployeeNumber**: Required
-2. **DepartmentId**: Required (Data Type: Integer)
-3. **ShiftMasterId**: Required (Data Type: Integer)
-4. **ShiftDate**: Required (DateTime Format: mm/dd/yyyy)
-5. **CreatedBy**: Required (Value: 1 for admin HR system)
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| EmployeeNumber   | String  |  Unique identification   (Required)        |
+| DepartmentId   | Integer  |  Required         |
+| ShiftMasterId     | Integer | Shift Type           |
+| ShiftDate | DateTime | Required (DateTime Format: mm/dd/yyyy)          |
+| CreatedBy    | Integer  | 1         |
+
 
 To get the `ShiftMasterId`, use the following enum class:
 
@@ -184,9 +192,12 @@ To get the `ShiftMasterId`, use the following enum class:
     "UserId": 1,
     "DepartmentId": 2,
     "ShiftMasterId": 3,
-    "ShiftDate": "2024-05-26T09:55:48.0096806+00:00",
-    "CreatedBy": 4,
-    "ShiftId": "sample string 5"
+    "ShiftDate": "2024-05-29T13:49:43.3481105+00:00",
+    "ShiftStartDate": "2024-05-29T13:49:43.3481105+00:00",
+    "ShiftEndDate": "2024-05-29T13:49:43.3481105+00:00",
+    "ShiftId": "sample string 4",
+    "EmployeeNumber": "sample string 5",
+    "CreatedBy": 1
   },
   {
     "$ref": "1"
@@ -200,13 +211,43 @@ When a staff member physically clocks in on-site, you can push that information 
 
 ### API Endpoint
 
-**API Url**: `POST api/Roaster/ClockIn`
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/UserShiftClockIn`
+
+**API Endpoint**: `POST api/Roaster/UserShiftClockIn`
+
 
 ### Parameters
 
-1. **EmployeeNumber**: Required
-2. **DepartmentId**: Required (Data Type: Integer)
-3. **ClockInDate**: Required (DateTime Format: dd/mm/yyyy)
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| EmployeeNumber   | String  |  Unique identification   (Required)        |
+| DepartmentId   | Integer  |  Required         |
+| ShiftMasterId     | Integer | Shift Type           |
+| ShiftDate | DateTime | Required (DateTime Format: mm/dd/yyyy)          |
+| CreatedBy    | Integer  | 1         |
+
+### Sample Request:
+
+```json
+[
+  {
+    "$id": "1",
+    "UserId": 1,
+    "DepartmentId": 2,
+    "ShiftMasterId": 3,
+    "ShiftDate": "2024-05-29T13:49:43.3481105+00:00",
+    "ShiftStartDate": "2024-05-29T13:49:43.3481105+00:00",
+    "ShiftEndDate": "2024-05-29T13:49:43.3481105+00:00",
+    "ShiftId": "sample string 4",
+    "EmployeeNumber": "sample string 5",
+    "CreatedBy": 1
+  },
+  {
+    "$ref": "1"
+  }
+]
+```
+
 
 Request the following information regarding an employee's punch-in activity in your offline system:
 - Employee Number: [Insert Employee Number]
