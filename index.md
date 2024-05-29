@@ -38,7 +38,6 @@ To retrieve all hospitals, make a POST request to the following API endpoint:
 
 **Endpoint**: `POST /api/Account/GetAllHospitals`
 
-
 **URL**: `https://tritonlenmedapiqa.converge-solutions.com/api/Account/GetAllHospitals`
 
 ### Parameters:
@@ -55,7 +54,6 @@ To retrieve all hospitals, make a POST request to the following API endpoint:
 To retrieve all departments related to a particular hospital, make a POST request to the following API endpoint:
 
 **Endpoint**: `POST /api/Admin/GetAllDepartments`
-
 
 **URL**: `https://tritonlenmedapiqa.converge-solutions.com/api/Admin/GetAllDepartments`
 
