@@ -32,12 +32,28 @@
 ---
 
 ## Master API
+## Get All Hospitals
+
+To retrieve all hospitals, make a POST request to the following API endpoint:
+
+**Endpoint**: `POST /api/Account/GetAllHospitals`
+**URL**: `https://tritonlenmedapiqa.converge-solutions.com/api/Account/GetAllHospitals`
+
+### Parameters:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| CityId   | Integer |use "2" in CityId           |
+
+![image](https://github.com/techxps/Triton/assets/169183598/d71780fe-2b1c-4da4-b22e-e8494d8b45f7)
+
+
 ## Get All Departments
 
 To retrieve all departments related to a particular hospital, make a POST request to the following API endpoint:
 
 **Endpoint**: `POST /api/Admin/GetAllDepartments`
-**URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Admin/GetAllDepartments`
+**URL**: `https://tritonlenmedapiqa.converge-solutions.com/api/Admin/GetAllDepartments`
 
 ### Parameters:
 
@@ -46,7 +62,10 @@ To retrieve all departments related to a particular hospital, make a POST reques
 | HospitalId   | Integer |Hospital Id           |
 
 
-You can obtain the hospital ID by using the hospital API.
+You can get all the hospital ID by using the hospital API.
+
+![image](https://github.com/techxps/Triton/assets/169183598/3c81a770-f489-4371-81eb-2ce0db5a92c7)
+
 
 ---
 
