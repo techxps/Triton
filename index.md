@@ -1,13 +1,3 @@
-
----
-title: Triton
-description: Draft version of the API documentation
----
-
-# Triton
-
-Welcome to the Triton API documentation. Here you will find all the information you need to use our API.
-
 ## Table of Contents
 1. [API Authentication](#api-authentication)
 2. [Hospital Management](#user-management)
