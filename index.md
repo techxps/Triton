@@ -114,9 +114,9 @@ To retrieve all designations related to a particular hospital, make a POST reque
 
 When a nurse joins your organization and their details are captured in your HR system, you can follow this process to create the nurse automatically in Triton.
 
-**Endpoint**: `POST /api/Admin/CreateUser`
+**Endpoint**: `POST /api/Roaster/CreateUserByEmployeeNumber`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/CreateUser`
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/CreateUserByEmployeeNumber`
 
 
 **Parameters**:
@@ -128,6 +128,11 @@ When a nurse joins your organization and their details are captured in your HR s
 | RoleId     | Integer | //4 Please use role id 4 for nurse role           |
 | HospitalId | Integer | Hospital Id           |
 | EmailId    | String  | Email Id          |
+| DepartmentId | Integer | Deparrment Id           |
+| WardId | Integer | Ward Id           |
+| DesignationId | Integer | Designation Id           |
+| EmployeeNumber | Integer | EmployeeNumber Id           |
+| CreatedBy     | Integer | //1 Please use  id 1           |
 
 
 ---
@@ -145,7 +150,7 @@ When a nurse joins your organization and their details are captured in your HR s
   "UserName": "sample string 6",
   "Name": "sample string 7",
   "LastName": "sample string 8",
-  "Email": "sample string 9",
+  "EmailId": "sample string 9",
   "Address": "sample string 10",
   "EmployeeNumber": "sample string 11",
   "Country": "sample string 12",
@@ -158,6 +163,78 @@ When a nurse joins your organization and their details are captured in your HR s
   "WardId": 1
 }
 ```
+
+#### Moving Nurses
+
+When a nurse movings their designation , department, ward 
+
+**Endpoint**: `POST /api/Roaster/UpdateUserByEmployeeNumber`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/UpdateUserByEmployeeNumber`
+
+
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| UserName   | String  |  Name of User   (Required)        |
+| Password   | String  |  Password  (Required)         |
+| RoleId     | Integer | //4 Please use role id 4 for nurse role           |
+| HospitalId | Integer | Hospital Id           |
+| EmailId    | String  | Email Id          |
+| DepartmentId | Integer | Deparrment Id           |
+| WardId | Integer | Ward Id           |
+| DesignationId | Integer | Designation Id           |
+| EmployeeNumber | Integer | EmployeeNumber Id           |
+| ModifiedBy     | Integer | //1 Please use  id 1           |
+
+
+
+## Request Formats
+
+### Sample:
+
+```json
+{
+  "ModifiedBy": 1,
+  "Password": "sample string 1",
+  "qualification": "sample string 3",
+  "Image": "sample string 5",
+  "UserName": "sample string 6",
+  "Name": "sample string 7",
+  "LastName": "sample string 8",
+  "EmailId": "sample string 9",
+  "Address": "sample string 10",
+  "EmployeeNumber": "sample string 11",
+  "Country": "sample string 12",
+  "Mobile": "sample string 13",
+  "RoleId": 4,
+  "DepartmentId": 1,
+  "HospitalId": 1,
+  "DesignationId": 1,
+  "ReportTo": 1,
+  "WardId": 1
+}
+```
+
+#### Leaving Nurses
+
+**Endpoint**: `POST /api/Roaster/LeavingUserByEmployeeNumber`
+
+**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/LeavingUserByEmployeeNumber`
+
+
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| ModifiedBy | Integer |1           |
+| IsActive | Boolean | False           |
+| EmployeeNumber | Integer | EmployeeNumber Id           |
+
+
+
+
 ---
 ## Off-duties / Duty Roster
 
