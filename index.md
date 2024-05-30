@@ -69,9 +69,6 @@ To retrieve all departments related to a particular hospital, make a POST reques
 
 You can get all the hospital ID by using the hospital API.
 
-![image](https://github.com/techxps/Triton/assets/169183598/3c81a770-f489-4371-81eb-2ce0db5a92c7)
-
-
 ---
 
 ## Get Wards By Department
