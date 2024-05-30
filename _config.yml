@@ -2,3 +2,8 @@ remote_theme: pages-themes/cayman@v0.2.0
 title: Triton
 description: Draft version of the API documentation 
 show_downloads: false
+sass:
+  style: :compressed
+  sass_dir: _sass
+  scss_dir: _sass
+  include: ["custom.css"]
