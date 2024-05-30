@@ -18,7 +18,7 @@
 
 **Endpoint**: `POST /api/Account/checkuser`
 
-**URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Account/checkuser`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Account/checkuser`
 
 **Parameters**:
 
@@ -59,7 +59,7 @@ To retrieve all departments related to a particular hospital, make a POST reques
 
 **Endpoint**: `POST /api/Admin/GetAllDepartments`
 
-**URL**: `https://tritonlenmedapiqa.converge-solutions.com/api/Admin/GetAllDepartments`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Admin/GetAllDepartments`
 
 ### Parameters:
 
@@ -81,7 +81,7 @@ To get all the wards related to a particular department and hospital, use the fo
 
 **Endpoint**: `POST /api/Admin/GetWardsByDepartment`
 
-**URL**: `https://tritonlenmedqaapi.converge-solutions.com/api/Admin/GetWardsByDepartment`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Admin/GetWardsByDepartment`
 
 
 ### Parameters:
@@ -102,7 +102,7 @@ To retrieve all designations related to a particular hospital, make a POST reque
 
 **Endpoint**: `POST /api/Admin/GetDesignationByHospital`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Admin/GetDesignationByHospital`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Admin/GetDesignationByHospital`
 
 ### Parameters:
 
@@ -120,7 +120,7 @@ When a nurse joins your organization and their details are captured in your HR s
 
 **Endpoint**: `POST /api/Roaster/CreateUserByEmployeeNumber`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/CreateUserByEmployeeNumber`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Roaster/CreateUserByEmployeeNumber`
 
 
 **Parameters**:
@@ -174,7 +174,7 @@ When a nurse movings their designation , department, ward
 
 **Endpoint**: `POST /api/Roaster/UpdateUserByEmployeeNumber`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/UpdateUserByEmployeeNumber`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Roaster/UpdateUserByEmployeeNumber`
 
 
 **Parameters**:
@@ -225,7 +225,7 @@ When a nurse movings their designation , department, ward
 
 **Endpoint**: `POST /api/Roaster/LeavingUserByEmployeeNumber`
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/LeavingUserByEmployeeNumber`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Roaster/LeavingUserByEmployeeNumber`
 
 
 **Parameters**:
@@ -245,7 +245,7 @@ When a nurse movings their designation , department, ward
 To manage off-duties or duty roster, you need to call the following API with the requested parameters:
 
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/CreateUserShiftByEmployeeNumber`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Roaster/CreateUserShiftByEmployeeNumber`
 
 **API Endpoint**: `POST api/Roaster/CreateUserShiftByEmployeeNumber`
 
@@ -265,6 +265,7 @@ To manage off-duties or duty roster, you need to call the following API with the
 To get the `ShiftMasterId`, use the following enum class:
 
 - For "Day" shift, use 1.
+- For "Night" shift use 2.
 
 ### Sample Request:
 
@@ -294,7 +295,7 @@ When a staff member physically clocks in on-site, you can push that information 
 
 ### API Endpoint
 
-**URL**: `https://tritonlenmedapi.converge-solutions.com/api/Roaster/UserShiftClockIn`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Roaster/UserShiftClockIn`
 
 **API Endpoint**: `POST api/Roaster/UserShiftClockIn`
 
