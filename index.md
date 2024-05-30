@@ -41,7 +41,7 @@ To retrieve all hospitals, make a POST request to the following API endpoint:
 
 **Endpoint**: `POST /api/Account/GetAllHospitals`
 
-**URL**: `https://tritonlenmedapiqa.converge-solutions.com/api/Account/GetAllHospitals`
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Account/GetAllHospitals`
 
 ### Parameters:
 
