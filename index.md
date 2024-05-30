@@ -234,7 +234,7 @@ When a nurse movings their designation , department, ward
 |------------|--------|----------------------------|
 | ModifiedBy | Integer |1           |
 | IsActive | Boolean | False           |
-| EmployeeNumber | Integer | EmployeeNumber Id           |
+| EmployeeNumber | string | EmployeeNumber           |
 
 
 
