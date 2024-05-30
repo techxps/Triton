@@ -114,7 +114,7 @@ To retrieve all designations related to a particular hospital, make a POST reque
 
 ### JML Leaving Process
 
-#### Joining Nurses
+## Joining Nurses
 
 When a nurse joins your organization and their details are captured in your HR system, you can follow this process to create the nurse automatically in Triton.
 
@@ -168,7 +168,7 @@ When a nurse joins your organization and their details are captured in your HR s
 }
 ```
 
-#### Moving Nurses
+## Moving Nurses
 
 When a nurse movings their designation , department, ward 
 
@@ -221,7 +221,7 @@ When a nurse movings their designation , department, ward
 }
 ```
 
-#### Leaving Nurses
+## Leaving Nurses
 
 **Endpoint**: `POST /api/Roaster/LeavingUserByEmployeeNumber`
 
