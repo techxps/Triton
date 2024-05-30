@@ -4,6 +4,10 @@
    - [Get All Departments](#get-all-departments)  <!-- Updated -->
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
+2. [JML Leaving Process](#Joining Nurses)
+   - [Joining Nurses](#Joining Nurses)  <!-- Updated -->
+   - [Moving Nurses](#Moving Nurses)  <!-- Updated -->
+   - [Leaving Nurses](#Leaving Nurses)  <!-- Updated -->
 4. [Shift Management](#shift-management)
    - [Off-duties / Duty Roster](#off-duties--duty-roster)  <!-- Updated -->
    - [Clock-in](#clock-in)  <!-- Updated -->
@@ -110,7 +114,7 @@ To retrieve all designations related to a particular hospital, make a POST reque
 
 ### JML Leaving Process
 
-#### Joining
+#### Joining Nurses
 
 When a nurse joins your organization and their details are captured in your HR system, you can follow this process to create the nurse automatically in Triton.
 
