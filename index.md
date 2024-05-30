@@ -5,9 +5,9 @@
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
 2. [JML Leaving Process](#Joining Nurses)
-   - [Joining Nurses](#joining-Nurses)  <!-- Updated -->
-   - [Moving Nurses](#moving-Nurses)  <!-- Updated -->
-   - [Leaving Nurses](#leaving-Nurses)  <!-- Updated -->
+   - [Joining Nurses](#joining-nurses)  <!-- Updated -->
+   - [Moving Nurses](#moving-nurses)  <!-- Updated -->
+   - [Leaving Nurses](#leaving-nurses)  <!-- Updated -->
 4. [Shift Management](#shift-management)
    - [Off-duties / Duty Roster](#off-duties--duty-roster)  <!-- Updated -->
    - [Clock-in](#clock-in)  <!-- Updated -->
