@@ -327,6 +327,59 @@ When a staff member physically clocks in on-site, you can push that information 
   }
 ]
 ```
+## Update Nurse Rates
+
+### API Endpoint
+
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Admin/UpdateNurseWiseCTC`
+
+**API Endpoint**: `POST api/Admin/UpdateNurseWiseCTC`
+
+
+### Parameters
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| NightShiftListAgency   | String  |  Required        |
+| DayShiftListAgency   | String  |  Required         |
+| EmployeeNumber     | Integer | Required           |
+
+Sample:
+{
+  "NightShiftListAgency": [
+    {
+      
+      "DayId": 2,
+      "AgencyPerhourCost": 1.0,
+      "AgencyPerhourCostOne": 1.0,
+      "AgencyPerhourCostTwo": 1.0,
+      "ShiftType": 5,
+      "RateWise": 1,
+      "HospitalId": 1,
+      "DesignationId": 1
+    },
+    {
+      "$ref": "2"
+    }
+  ],
+  "DayShiftListAgency": [
+ {
+     "DayId": 2,
+      "AgencyPerhourCost": 1.0,
+      "AgencyPerhourCostOne": 1.0,
+      "AgencyPerhourCostTwo": 1.0,
+      "ShiftType": 5,
+      "RateWise": 1,
+      "HospitalId": 1,
+      "DesignationId": 1
+       },
+    {
+      "$ref": "2"
+    }
+  ]
+  
+}
+
 
 
 Request the following information regarding an employee's punch-in activity in your offline system:
