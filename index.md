@@ -326,6 +326,13 @@ When a staff member physically clocks in on-site, you can push that information 
     "$ref": "1"
   }
 ]
+
+Request the following information regarding an employee's punch-in activity in your offline system:
+- Employee Number: [Insert Employee Number]
+- Department: [Insert Department]
+- Date of Punch-In: [Insert Date]
+ -->
+
 ```
 ## Update Rates
 
@@ -344,7 +351,9 @@ When a staff member physically clocks in on-site, you can push that information 
 | DayShiftListAgency   | String  |  Required         |
 | EmployeeNumber     | Integer | Required           |
 
-Sample:
+### Sample Request:
+
+```json
 {
   "NightShiftListAgency": [
     {
@@ -381,9 +390,3 @@ Sample:
 }
 
 
-
-Request the following information regarding an employee's punch-in activity in your offline system:
-- Employee Number: [Insert Employee Number]
-- Department: [Insert Department]
-- Date of Punch-In: [Insert Date]
- -->
