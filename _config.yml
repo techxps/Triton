@@ -1,7 +1,10 @@
-remote_theme: pages-themes/cayman@v0.2.0
+# remote_theme: pages-themes/cayman@v0.2.0
+# title: Triton
+# description: Draft version of the API documentation 
+# show_downloads: false
+
+
 title: Triton
 description: Draft version of the API documentation 
 show_downloads: false
-
-
-
+remote_theme: pages-themes/cayman@v0.2.0
