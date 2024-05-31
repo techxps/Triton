@@ -360,9 +360,9 @@ Request the following information regarding an employee's punch-in activity in y
     {
       
       "DayId": 2,
-      "AgencyPerhourCost": 1.0,
-      "AgencyPerhourCostOne": 1.0,
-      "AgencyPerhourCostTwo": 1.0,
+      "AveragePerhourCost": 1.0,
+      "SpecialPerhourCost": 1.0,
+      "OverTimePerhourCost": 1.0,
       "ShiftType": 5,
       "RateWise": 1,
       "HospitalId": 1,
@@ -375,9 +375,9 @@ Request the following information regarding an employee's punch-in activity in y
   "DayShiftListAgency": [
     {
      "DayId": 2,
-      "AgencyPerhourCost": 1.0,
-      "AgencyPerhourCostOne": 1.0,
-      "AgencyPerhourCostTwo": 1.0,
+      "AveragePerhourCost": 1.0,
+      "SpecialPerhourCost": 1.0,
+      "OverTimePerhourCost": 1.0,
       "ShiftType": 5,
       "RateWise": 1,
       "HospitalId": 1,
