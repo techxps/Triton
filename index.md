@@ -350,6 +350,7 @@ When a staff member physically clocks in on-site, you can push that information 
 ### Sample Request:
 
 ```json
+[
 
 {
   "NightShiftListAgency": [
@@ -385,3 +386,4 @@ When a staff member physically clocks in on-site, you can push that information 
   ]
   
 }
+]
