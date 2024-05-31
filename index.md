@@ -327,7 +327,7 @@ When a staff member physically clocks in on-site, you can push that information 
   }
 ]
 ```
-## Update Nurse Rates
+## Update Rates
 
 ### API Endpoint
 
