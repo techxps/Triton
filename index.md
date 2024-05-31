@@ -4,7 +4,7 @@
    - [Get All Departments](#get-all-departments)  <!-- Updated -->
    - [Get Wards By Department](#get-wards-by-department)  <!-- Updated -->
    - [Get Designations By Hospital](#get-designations-by-hospital)  <!-- Updated -->
-3. [JML Leaving Process](#Joining Nurses)
+3. [JML Leaving Process](#joining-nurses)
    - [Joining Nurses](#joining-nurses)  <!-- Updated -->
    - [Moving Nurses](#moving-nurses)  <!-- Updated -->
    - [Leaving Nurses](#leaving-nurses)  <!-- Updated -->
