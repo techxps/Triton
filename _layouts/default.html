@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+  <link rel="stylesheet" href="https://pages-themes.github.io/cayman/css/style.css?v=0.2.0">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+      <a class="btn" href="https://github.com/techxps/Triton" target="_blank" style="text-decoration: none;">View on GitHub</a>
+    </div>
+  </header>
+  <main class="markdown-body">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </div>
+  </footer>
+</body>
+</html>
