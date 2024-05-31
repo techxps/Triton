@@ -388,5 +388,3 @@ Request the following information regarding an employee's punch-in activity in y
   ]
   
 }
-
-
