@@ -354,6 +354,7 @@ Request the following information regarding an employee's punch-in activity in y
 ### Sample Request:
 
 ```json
+
 {
   "NightShiftListAgency": [
     {
@@ -372,7 +373,7 @@ Request the following information regarding an employee's punch-in activity in y
     }
   ],
   "DayShiftListAgency": [
- {
+    {
      "DayId": 2,
       "AgencyPerhourCost": 1.0,
       "AgencyPerhourCostOne": 1.0,
