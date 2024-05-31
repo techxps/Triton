@@ -327,11 +327,7 @@ When a staff member physically clocks in on-site, you can push that information 
   }
 ]
 
-Request the following information regarding an employee's punch-in activity in your offline system:
-- Employee Number: [Insert Employee Number]
-- Department: [Insert Department]
-- Date of Punch-In: [Insert Date]
- -->
+
 
 ```
 ## Update Rates
