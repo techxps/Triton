@@ -11,6 +11,8 @@
 4. [Shift Management](#shift-management)
    - [Off-duties / Duty Roster](#off-duties--duty-roster)  <!-- Updated -->
    - [Clock-in](#clock-in)  <!-- Updated -->
+5. [Update Rates](#update-rates)
+   
 
 ## API Authentication
 
