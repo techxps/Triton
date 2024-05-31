@@ -49,8 +49,6 @@ To retrieve all hospitals, make a POST request to the following API endpoint:
 |------------|--------|----------------------------|
 | CityId   | Integer |use "2" in CityId           |
 
-![image](https://github.com/techxps/Triton/assets/169183598/d71780fe-2b1c-4da4-b22e-e8494d8b45f7)
-
 
 ## Get All Departments
 
