@@ -343,8 +343,8 @@ When a staff member physically clocks in on-site, you can push that information 
 
 | Parameter  | Type   | Description                |
 |------------|--------|----------------------------|
-| NightShiftListAgency   | String  |  Required        |
-| DayShiftListAgency   | String  |  Required         |
+| NightShiftList   | String  |  Required        |
+| DayShiftList   | String  |  Required         |
 | EmployeeNumber     | Integer | Required           |
 
 ### Sample Request:
@@ -353,10 +353,10 @@ When a staff member physically clocks in on-site, you can push that information 
 [
 
 {
-  "NightShiftListAgency": [
+  "NightShiftList": [
     {
       
-      "DayId": 2,
+      "DayId": 2,//for night use 2
       "AveragePerhourCost": 1.0,
       "SpecialPerhourCost": 1.0,
       "OverTimePerhourCost": 1.0,
@@ -365,13 +365,11 @@ When a staff member physically clocks in on-site, you can push that information 
       "HospitalId": 1,
       "DesignationId": 1
     },
-    {
-      "$ref": "2"
-    }
+   
   ],
-  "DayShiftListAgency": [
+  "DayShiftList": [
     {
-     "DayId": 2,
+     "DayId": 1,//for day use 1
       "AveragePerhourCost": 1.0,
       "SpecialPerhourCost": 1.0,
       "OverTimePerhourCost": 1.0,
@@ -380,9 +378,7 @@ When a staff member physically clocks in on-site, you can push that information 
       "HospitalId": 1,
       "DesignationId": 1
        },
-    {
-      "$ref": "2"
-    }
+   
   ]
   
 }
