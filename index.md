@@ -353,17 +353,32 @@ When a staff member physically clocks in on-site, you can push that information 
 [
 
 {
+   "EmployeeNumber":"",
   "NightShiftList": [
     {
       
-      "DayId": 2,//for night use 2
+   
       "AveragePerhourCost": 1.0,
       "SpecialPerhourCost": 1.0,
       "OverTimePerhourCost": 1.0,
       "ShiftType": 5,
       "RateWise": 1,
       "HospitalId": 1,
-      "DesignationId": 1
+      "DesignationId": 1,
+      "Name":"Monday"
+    },
+
+{
+      
+     
+      "AveragePerhourCost": 1.0,
+      "SpecialPerhourCost": 1.0,
+      "OverTimePerhourCost": 1.0,
+      "ShiftType": 5,
+      "RateWise": 1,
+      "HospitalId": 1,
+      "DesignationId": 1,
+      "Name":"Tuesday"
     },
    
   ],
@@ -376,7 +391,19 @@ When a staff member physically clocks in on-site, you can push that information 
       "ShiftType": 5,
       "RateWise": 1,
       "HospitalId": 1,
-      "DesignationId": 1
+      "DesignationId": 1,
+         "Name":"Monday"
+       },
+ {
+     "DayId": 1,//for day use 1
+      "AveragePerhourCost": 1.0,
+      "SpecialPerhourCost": 1.0,
+      "OverTimePerhourCost": 1.0,
+      "ShiftType": 5,
+      "RateWise": 1,
+      "HospitalId": 1,
+      "DesignationId": 1,
+         "Name":"Tuesday"
        },
    
   ]
