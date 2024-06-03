@@ -384,7 +384,7 @@ When a staff member physically clocks in on-site, you can push that information 
   ],
   "DayShiftList": [
     {
-     "DayId": 1,//for day use 1
+     
       "AveragePerhourCost": 1.0,
       "SpecialPerhourCost": 1.0,
       "OverTimePerhourCost": 1.0,
@@ -392,10 +392,10 @@ When a staff member physically clocks in on-site, you can push that information 
       "RateWise": 1,
       "HospitalId": 1,
       "DesignationId": 1,
-         "Name":"Monday"
+      "Name":"Monday"
        },
- {
-     "DayId": 1,//for day use 1
+    {
+     
       "AveragePerhourCost": 1.0,
       "SpecialPerhourCost": 1.0,
       "OverTimePerhourCost": 1.0,
@@ -403,7 +403,7 @@ When a staff member physically clocks in on-site, you can push that information 
       "RateWise": 1,
       "HospitalId": 1,
       "DesignationId": 1,
-         "Name":"Tuesday"
+      "Name":"Tuesday"
        },
    
   ]
