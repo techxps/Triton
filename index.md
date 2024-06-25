@@ -30,7 +30,8 @@
 | Password   | string | Password                   |
 | HospitalId | int    | Unique Id                  |
 
-![image](https://github.com/techxps/Triton/assets/169183598/e7c06213-358d-4bd6-b9a4-8b153d4ca919)
+![image](https://github.com/techxps/Triton/assets/169183598/e17f941d-bd47-4942-8143-3f81f852ed6a)
+
 
 
 
