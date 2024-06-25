@@ -30,10 +30,14 @@
 | Password   | string | Password                   |
 | HospitalId | int    | Unique Id                  |
 
-![image](https://github.com/techxps/Triton/assets/169183598/e17f941d-bd47-4942-8143-3f81f852ed6a)
+![image](https://github.com/techxps/Triton/assets/169183598/26e092a7-a0e7-4871-a531-1e1475e37eca)
 
 
+We acquired the authorization token via this API, and now we need to paas this Authorization-Token value in the header of all other APIs.
 
+For Example: 
+
+![image](https://github.com/techxps/Triton/assets/169183598/e76f3446-84b1-43ea-ae3d-49a363b37a84)
 
 ---
 
