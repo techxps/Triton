@@ -37,7 +37,8 @@ We acquired the authorization token via this API, and now we need to paas this A
 
 For Example: 
 
-![image](https://github.com/techxps/Triton/assets/169183598/e76f3446-84b1-43ea-ae3d-49a363b37a84)
+![image](https://github.com/techxps/Triton/assets/169183598/7d91dec4-e82b-4d7d-b1b9-67691685097b)
+
 
 ---
 
