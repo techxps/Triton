@@ -12,6 +12,7 @@
    - [Off-duties / Duty Roster](#off-duties--duty-roster)  <!-- Updated -->
    - [Clock-in](#clock-in)  <!-- Updated -->
 5. [Update Rates](#update-rates)
+6. [Get Users By Employee Number](#userby-employeeno)
    
 
 ## API Authentication
@@ -239,6 +240,18 @@ When a nurse movings their designation , department, ward
 | EmployeeNumber | string | EmployeeNumber           |
 
 
+## userby-employeeno
+
+**Endpoint**: `POST /api/Admin/GetUserByEmployeeNumber`
+
+**URL**: `https://tritonclientapi.converge-solutions.com/api/Admin/GetUserByEmployeeNumber`
+
+
+**Parameters**:
+
+| Parameter  | Type   | Description                |
+|------------|--------|----------------------------|
+| EmployeeNumber | string | EmployeeNumber           |
 
 
 ---
